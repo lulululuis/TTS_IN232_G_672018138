@@ -435,15 +435,118 @@ void garis_bawah() {
 
 void garis() {
 	glLineWidth(10);
-
 	glColor3ub(0, 0, 0);
 	garis_atas();
-
-	glColor3ub(0, 0, 0);
 	garis_tengah();
-
-	glColor3ub(0, 0, 0);
 	garis_bawah();
+
+	glBegin(GL_LINE_LOOP);//0a
+	glVertex2f(0, 10);
+	glVertex2f(19.5, 40);
+	glVertex2f(0, 70);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//0b
+	glVertex2f(0, 20);
+	glVertex2f(13, 40);
+	glVertex2f(0, 60);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//1a
+	glVertex2f(6.5, 0);
+	glVertex2f(25, 30);
+	glVertex2f(43.5, 0);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//1b
+	glVertex2f(13, 0);
+	glVertex2f(25, 20);
+	glVertex2f(37, 0);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//2a
+	glVertex2f(31.5, 40);
+	glVertex2f(50, 10);
+	glVertex2f(68.5, 40);
+	glVertex2f(50, 70);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//2b
+	glVertex2f(38, 40);
+	glVertex2f(50, 20);
+	glVertex2f(62, 40);
+	glVertex2f(50, 60);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//3a
+	glVertex2f(56.5, 0);
+	glVertex2f(75, 30);
+	glVertex2f(93.5, 0);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//3b
+	glVertex2f(63, 0);
+	glVertex2f(75, 20);
+	glVertex2f(87, 0);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//4a
+	glVertex2f(100, 10);
+	glVertex2f(81.5, 40);
+	glVertex2f(100, 70);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//4b
+	glVertex2f(100, 20);
+	glVertex2f(88, 40);
+	glVertex2f(100, 60);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//5a
+	glVertex2f(0, 90);
+	glVertex2f(19.5, 120);
+	glVertex2f(0, 120);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//6a
+	glVertex2f(25, 50);
+	glVertex2f(6.5, 80);
+	glVertex2f(25, 110);
+	glVertex2f(43.5, 80);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//6b
+	glVertex2f(25, 60);
+	glVertex2f(13, 80);
+	glVertex2f(25, 100);
+	glVertex2f(37, 80);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//7a
+	glVertex2f(31.5, 120);
+	glVertex2f(50, 90);
+	glVertex2f(68.5, 120);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//8a
+	glVertex2f(75, 50);
+	glVertex2f(56.5, 80);
+	glVertex2f(75, 110);
+	glVertex2f(93.5, 80);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//8b
+	glVertex2f(75, 60);
+	glVertex2f(63, 80);
+	glVertex2f(75, 100);
+	glVertex2f(87, 80);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//9a
+	glVertex2f(81.5, 120);
+	glVertex2f(100, 90);
+	glVertex2f(100, 120);
+	glEnd();
 }
 
 void ketupat() {
@@ -537,6 +640,27 @@ void ketupate() {
 	ketupat3e();
 }
 
+void ketupat_kecil() {
+	glBegin(GL_POLYGON);//2a
+	glVertex2f(50, 10);
+	glVertex2f(48, 7.5);
+	glVertex2f(50, 5);
+	glVertex2f(52, 7.5);
+	glEnd();
+
+}
+
+void garis_ketupat_kecil() {
+	glColor3ub(0, 0, 0);
+	glLineWidth(2);
+	glBegin(GL_LINE_LOOP);//2a
+	glVertex2f(50, 10);
+	glVertex2f(48, 7.5);
+	glVertex2f(50, 5);
+	glVertex2f(52, 7.5);
+	glEnd();
+}
+
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT);
 
@@ -546,7 +670,9 @@ void display() {
 	ketupatc();
 	ketupatd();
 	ketupate();
+	ketupat_kecil();
 	garis();
+	garis_ketupat_kecil();
 
 	glFlush();
 }
