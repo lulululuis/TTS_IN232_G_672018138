@@ -440,25 +440,25 @@ void garis() {
 	garis_tengah();
 	garis_bawah();
 
-	glBegin(GL_LINE_LOOP);//0a
+	glBegin(GL_LINE_STRIP);//0a
 	glVertex2f(0, 10);
 	glVertex2f(19.5, 40);
 	glVertex2f(0, 70);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//0b
+	glBegin(GL_LINE_STRIP);//0b
 	glVertex2f(0, 20);
 	glVertex2f(13, 40);
 	glVertex2f(0, 60);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//1a
+	glBegin(GL_LINE_STRIP);//1a
 	glVertex2f(6.5, 0);
 	glVertex2f(25, 30);
 	glVertex2f(43.5, 0);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//1b
+	glBegin(GL_LINE_STRIP);//1b
 	glVertex2f(13, 0);
 	glVertex2f(25, 20);
 	glVertex2f(37, 0);
@@ -478,31 +478,31 @@ void garis() {
 	glVertex2f(50, 60);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//3a
+	glBegin(GL_LINE_STRIP);//3a
 	glVertex2f(56.5, 0);
 	glVertex2f(75, 30);
 	glVertex2f(93.5, 0);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//3b
+	glBegin(GL_LINE_STRIP);//3b
 	glVertex2f(63, 0);
 	glVertex2f(75, 20);
 	glVertex2f(87, 0);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//4a
+	glBegin(GL_LINE_STRIP);//4a
 	glVertex2f(100, 10);
 	glVertex2f(81.5, 40);
 	glVertex2f(100, 70);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//4b
+	glBegin(GL_LINE_STRIP);//4b
 	glVertex2f(100, 20);
 	glVertex2f(88, 40);
 	glVertex2f(100, 60);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//5a
+	glBegin(GL_LINE_STRIP);//5a
 	glVertex2f(0, 90);
 	glVertex2f(19.5, 120);
 	glVertex2f(0, 120);
@@ -522,7 +522,7 @@ void garis() {
 	glVertex2f(37, 80);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//7a
+	glBegin(GL_LINE_STRIP);//7a
 	glVertex2f(31.5, 120);
 	glVertex2f(50, 90);
 	glVertex2f(68.5, 120);
@@ -542,9 +542,9 @@ void garis() {
 	glVertex2f(87, 80);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);//9a
-	glVertex2f(81.5, 120);
+	glBegin(GL_LINE_STRIP);//9a
 	glVertex2f(100, 90);
+	glVertex2f(81.5, 120);
 	glVertex2f(100, 120);
 	glEnd();
 }
@@ -648,16 +648,498 @@ void ketupat_kecil() {
 	glVertex2f(52, 7.5);
 	glEnd();
 
+	glBegin(GL_POLYGON);//6c
+	glVertex2f(25, 70);
+	glVertex2f(27, 67.5);
+	glVertex2f(25, 65);
+	glVertex2f(23, 67.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//6c
+	glVertex2f(25, 90);
+	glVertex2f(27, 92.5);
+	glVertex2f(25, 95);
+	glVertex2f(23, 92.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//8c
+	glVertex2f(75, 70);
+	glVertex2f(77, 67.5);
+	glVertex2f(75, 65);
+	glVertex2f(73, 67.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//8c
+	glVertex2f(75, 90);
+	glVertex2f(77, 92.5);
+	glVertex2f(75, 95);
+	glVertex2f(73, 92.5);
+	glEnd();
+	
+	glColor3ub(255, 105, 180);
+	glBegin(GL_POLYGON);//2a
+	glVertex2f(50, 70);
+	glVertex2f(48, 72.5);
+	glVertex2f(50, 75);
+	glVertex2f(52, 72.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//2c
+	glVertex2f(48, 27.5);
+	glVertex2f(50, 30);
+	glVertex2f(52, 27.5);
+	glVertex2f(50, 25);
+	glEnd();
+
+	glBegin(GL_POLYGON);//2c
+	glVertex2f(48, 52.5);
+	glVertex2f(50, 55);
+	glVertex2f(52, 52.5);
+	glVertex2f(50, 50);
+	glEnd();
+
+	glBegin(GL_POLYGON);//1a
+	glVertex2f(23, 32.5);
+	glVertex2f(25, 30);
+	glVertex2f(27, 32.5);
+	glVertex2f(25, 35);
+	glEnd();
+
+	glBegin(GL_POLYGON);//3a
+	glVertex2f(73, 32.5);
+	glVertex2f(75, 30);
+	glVertex2f(77, 32.5);
+	glVertex2f(75, 35);
+	glEnd();
+
+	glBegin(GL_POLYGON);//4a
+	glVertex2f(100, 10);
+	glVertex2f(98, 7.5);
+	glVertex2f(100, 5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//4a
+	glVertex2f(100, 75);
+	glVertex2f(98, 72.5);
+	glVertex2f(100, 70);
+	glEnd();
+
+	glBegin(GL_POLYGON);//4c
+	glVertex2f(100, 30);
+	glVertex2f(98, 27.5);
+	glVertex2f(100, 25);
+	glEnd();
+	
+	glBegin(GL_POLYGON);//4c
+	glVertex2f(100, 55);
+	glVertex2f(98, 52.5);
+	glVertex2f(100, 50);
+	glEnd();
+
+	glBegin(GL_POLYGON);//5a
+	glVertex2f(0, 90);
+	glVertex2f(2, 87.5);
+	glVertex2f(0, 85);
+	glEnd();
+
+	glBegin(GL_POLYGON);//6a
+	glVertex2f(25, 50);
+	glVertex2f(27, 47.5);
+	glVertex2f(25, 45);
+	glVertex2f(23, 47.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//8a
+	glVertex2f(75, 50);
+	glVertex2f(77, 47.5);
+	glVertex2f(75, 45);
+	glVertex2f(73, 47.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//9a
+	glVertex2f(100, 85);
+	glVertex2f(98, 87.5);
+	glVertex2f(100, 90);
+	glEnd();
+
+	glBegin(GL_POLYGON);//0a
+	glVertex2f(0, 10);
+	glVertex2f(0, 5);
+	glVertex2f(2, 7.5);
+	glEnd();
+	
+	glBegin(GL_POLYGON);//0a
+	glVertex2f(0, 70);
+	glVertex2f(0, 75);
+	glVertex2f(2, 72.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//0c
+	glVertex2f(0, 30);
+	glVertex2f(2, 27.5);
+	glVertex2f(0, 25);
+	glEnd();
+	
+	glBegin(GL_POLYGON);//0c
+	glVertex2f(0, 55);
+	glVertex2f(2, 52.5);
+	glVertex2f(0, 50);
+	glEnd();
+
+	glColor3ub(255, 215, 0);
+	glBegin(GL_POLYGON);//2b
+	glVertex2f(48, 17.5);
+	glVertex2f(50, 20);
+	glVertex2f(52, 17.5);
+	glVertex2f(50, 15);
+	glEnd();
+
+	glBegin(GL_POLYGON);//2b
+	glVertex2f(48, 62.5);
+	glVertex2f(50, 65);
+	glVertex2f(52, 62.5);
+	glVertex2f(50, 60);
+	glEnd();
+
+	glBegin(GL_POLYGON);//4b
+	glVertex2f(100, 20);
+	glVertex2f(98, 17.5);
+	glVertex2f(100, 15);
+	glEnd();
+	
+	glBegin(GL_POLYGON);//4b
+	glVertex2f(100, 65);
+	glVertex2f(98, 62.5);
+	glVertex2f(100, 60);
+	glEnd();
+
+	glColor3ub(107, 142, 35);
+	glBegin(GL_POLYGON);//1b
+	glVertex2f(23, 22.5);
+	glVertex2f(25, 20);
+	glVertex2f(27, 22.5);
+	glVertex2f(25, 25);
+	glEnd();
+
+	glBegin(GL_POLYGON);//3b
+	glVertex2f(73, 22.5);
+	glVertex2f(75, 20);
+	glVertex2f(77, 22.5);
+	glVertex2f(75, 25);
+	glEnd();
+
+	glBegin(GL_POLYGON);//7a
+	glVertex2f(48, 87.5);
+	glVertex2f(50, 90);
+	glVertex2f(52, 87.5);
+	glVertex2f(50, 85);
+	glEnd();
+
+	glColor3ub(255, 165, 0);
+	glBegin(GL_POLYGON);//1c
+	glVertex2f(23, 12.5);
+	glVertex2f(25, 10);
+	glVertex2f(27, 12.5);
+	glVertex2f(25, 15);
+	glEnd();
+
+	glBegin(GL_POLYGON);//3c
+	glVertex2f(73, 12.5);
+	glVertex2f(75, 10);
+	glVertex2f(77, 12.5);
+	glVertex2f(75, 15);
+	glEnd();
+
+	glColor3ub(255, 0, 0);
+	glBegin(GL_POLYGON);//6b
+	glVertex2f(25, 60);
+	glVertex2f(27, 57.5);
+	glVertex2f(25, 55);
+	glVertex2f(23, 57.5);
+	glEnd();
+
+	glBegin(GL_POLYGON);//8b
+	glVertex2f(75, 60);
+	glVertex2f(77, 57.5);
+	glVertex2f(75, 55);
+	glVertex2f(73, 57.5);
+	glEnd();
+
+	glColor3ub(255, 215, 0);
+	glBegin(GL_POLYGON);//0b
+	glVertex2f(0, 20);
+	glVertex2f(2, 17.5);
+	glVertex2f(0, 15);
+	glEnd();
+	
+	glBegin(GL_POLYGON);//0b
+	glVertex2f(0, 65);
+	glVertex2f(2, 62.5);
+	glVertex2f(0, 60);
+	glEnd();
+
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);//0a
+	glVertex2f(22, 42.5);
+	glVertex2f(20.5, 40);
+	glVertex2f(22, 37.5);
+	glVertex2f(23.5, 40);
+	glEnd();
+
+	glBegin(GL_POLYGON);//0b
+	glVertex2f(15.5, 42.5);
+	glVertex2f(14, 40);
+	glVertex2f(15.5, 37.5);
+	glVertex2f(17, 40);
+	glEnd();
+
+	glBegin(GL_POLYGON);//4a
+	glVertex2f(79, 42.5);
+	glVertex2f(80.5, 40);
+	glVertex2f(79, 37.5);
+	glVertex2f(77.5, 40);
+	glEnd();
+
+	glBegin(GL_POLYGON);//4b
+	glVertex2f(85.5, 42.5);
+	glVertex2f(87, 40);
+	glVertex2f(85.5, 37.5);
+	glVertex2f(84, 40);
+	glEnd();
 }
 
 void garis_ketupat_kecil() {
 	glColor3ub(0, 0, 0);
 	glLineWidth(2);
+	glBegin(GL_LINE_STRIP);//0a
+	glVertex2f(0, 10);
+	glVertex2f(2, 7.5);
+	glVertex2f(0, 5);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//0a
+	glVertex2f(0, 70);
+	glVertex2f(2, 72.5);
+	glVertex2f(0, 75);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//0b
+	glVertex2f(0, 20);
+	glVertex2f(2, 17.5);
+	glVertex2f(0, 15);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//0b
+	glVertex2f(0, 65);
+	glVertex2f(2, 62.5);
+	glVertex2f(0, 60);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//0c
+	glVertex2f(0, 30);
+	glVertex2f(2, 27.5);
+	glVertex2f(0, 25);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//0c
+	glVertex2f(0, 55);
+	glVertex2f(2, 52.5);
+	glVertex2f(0, 50);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//1a
+	glVertex2f(23, 32.5);
+	glVertex2f(25, 30);
+	glVertex2f(27, 32.5);
+	glVertex2f(25, 35);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//1b
+	glVertex2f(23, 22.5);
+	glVertex2f(25, 20);
+	glVertex2f(27, 22.5);
+	glVertex2f(25, 25);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//1c
+	glVertex2f(23, 12.5);
+	glVertex2f(25, 10);
+	glVertex2f(27, 12.5);
+	glVertex2f(25, 15);
+	glEnd();
+
 	glBegin(GL_LINE_LOOP);//2a
 	glVertex2f(50, 10);
 	glVertex2f(48, 7.5);
 	glVertex2f(50, 5);
 	glVertex2f(52, 7.5);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//2a
+	glVertex2f(50, 70);
+	glVertex2f(48, 72.5);
+	glVertex2f(50, 75);
+	glVertex2f(52, 72.5);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//2b
+	glVertex2f(48, 17.5);
+	glVertex2f(50, 20);
+	glVertex2f(52, 17.5);
+	glVertex2f(50, 15);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//2b
+	glVertex2f(48, 62.5);
+	glVertex2f(50, 65);
+	glVertex2f(52, 62.5);
+	glVertex2f(50, 60);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//2c
+	glVertex2f(48, 27.5);
+	glVertex2f(50, 30);
+	glVertex2f(52, 27.5);
+	glVertex2f(50, 25);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//2c
+	glVertex2f(48, 52.5);
+	glVertex2f(50, 55);
+	glVertex2f(52, 52.5);
+	glVertex2f(50, 50);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//3a
+	glVertex2f(73, 32.5);
+	glVertex2f(75, 30);
+	glVertex2f(77, 32.5);
+	glVertex2f(75, 35);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//3b
+	glVertex2f(73, 22.5);
+	glVertex2f(75, 20);
+	glVertex2f(77, 22.5);
+	glVertex2f(75, 25);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//3c
+	glVertex2f(73, 12.5);
+	glVertex2f(75, 10);
+	glVertex2f(77, 12.5);
+	glVertex2f(75, 15);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//4a
+	glVertex2f(100, 10);
+	glVertex2f(98, 7.5);
+	glVertex2f(100, 5);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//4a
+	glVertex2f(100, 75);
+	glVertex2f(98, 72.5);
+	glVertex2f(100, 70);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//4b
+	glVertex2f(100, 20);
+	glVertex2f(98, 17.5);
+	glVertex2f(100, 15);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//4b
+	glVertex2f(100, 65);
+	glVertex2f(98, 62.5);
+	glVertex2f(100, 60);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//4c
+	glVertex2f(100, 30);
+	glVertex2f(98, 27.5);
+	glVertex2f(100, 25);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//4c
+	glVertex2f(100, 55);
+	glVertex2f(98, 52.5);
+	glVertex2f(100, 50);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//5a
+	glVertex2f(0, 90);
+	glVertex2f(2, 87.5);
+	glVertex2f(0, 85);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//6a
+	glVertex2f(25, 50);
+	glVertex2f(27, 47.5);
+	glVertex2f(25, 45);
+	glVertex2f(23, 47.5);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//6b
+	glVertex2f(25, 60);
+	glVertex2f(27, 57.5);
+	glVertex2f(25, 55);
+	glVertex2f(23, 57.5);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//6c
+	glVertex2f(25, 70);
+	glVertex2f(27, 67.5);
+	glVertex2f(25, 65);
+	glVertex2f(23, 67.5);
+	glEnd();
+	
+	glBegin(GL_LINE_LOOP);//6c
+	glVertex2f(25, 90);
+	glVertex2f(27, 92.5);
+	glVertex2f(25, 95);
+	glVertex2f(23, 92.5);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//7a
+	glVertex2f(48, 87.5);
+	glVertex2f(50, 90);
+	glVertex2f(52, 87.5);
+	glVertex2f(50, 85);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//8a
+	glVertex2f(75, 50);
+	glVertex2f(77, 47.5);
+	glVertex2f(75, 45);
+	glVertex2f(73, 47.5);
+	glEnd();	
+	
+	glBegin(GL_LINE_LOOP);//8b
+	glVertex2f(75, 60);
+	glVertex2f(77, 57.5);
+	glVertex2f(75, 55);
+	glVertex2f(73, 57.5);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);//8c
+	glVertex2f(75, 70);
+	glVertex2f(77, 67.5);
+	glVertex2f(75, 65);
+	glVertex2f(73, 67.5);
+	glEnd();
+	
+	glBegin(GL_LINE_LOOP);//8c
+	glVertex2f(75, 90);
+	glVertex2f(77, 92.5);
+	glVertex2f(75, 95);
+	glVertex2f(73, 92.5);
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);//9a
+	glVertex2f(100, 85);
+	glVertex2f(98, 87.5);
+	glVertex2f(100, 90);
 	glEnd();
 }
 
