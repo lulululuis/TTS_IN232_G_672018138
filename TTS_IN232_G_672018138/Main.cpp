@@ -1,6 +1,11 @@
 #include <iostream>
 #include <GL/freeglut.h>
 
+float x = 0.0f;
+float y = 0.0f;
+float x_delta = 3.0f;
+float y_delta = 5.0f;
+
 void ketupat0() {
 	glBegin(GL_POLYGON);
 	glVertex2f(0, 0);
@@ -1143,6 +1148,971 @@ void garis_ketupat_kecil() {
 	glEnd();
 }
 
+void garis_motif0() {
+	for (int i = 0; i <= 1 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(4.5 - x, 40 - y);
+		glVertex2f(7.5 - x, 35 - y);
+		glVertex2f(6 - x, 32.5 - y);
+		glVertex2f(4.5 - x, 35 - y);
+		glVertex2f(5.5 - x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(11.5 - x, 40 - y);
+		glVertex2f(14.5 - x, 35 - y);
+		glVertex2f(13 - x, 32.5 - y);
+		glVertex2f(11.5 - x, 35 - y);
+		glVertex2f(12.5 - x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(18.5 - x, 40 - y);
+		glVertex2f(21.5 - x, 35 - y);
+		glVertex2f(20 - x, 32.5 - y);
+		glVertex2f(18.5 - x, 35 - y);
+		glVertex2f(19.5 - x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(5.5 - x, 40 + y);
+		glVertex2f(8.5 - x, 45 + y);
+		glVertex2f(7 - x, 47.5 + y);
+		glVertex2f(5.5 - x, 45 + y);
+		glVertex2f(6.5 - x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(12.5 - x, 40 + y);
+		glVertex2f(15.5 - x, 45 + y);
+		glVertex2f(14 - x, 47.5 + y);
+		glVertex2f(12.5 - x, 45 + y);
+		glVertex2f(13.5 - x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(18.5 - x, 40 + y);
+		glVertex2f(21.5 - x, 45 + y);
+		glVertex2f(20 - x, 47.5 + y);
+		glVertex2f(18.5 - x, 45 + y);
+		glVertex2f(19.5 - x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+}
+
+void garis_motif1() {
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(20.5 + x, 0 + y);
+		glVertex2f(17.5 + x, 5 + y);
+		glVertex2f(19 + x, 7.5 + y);
+		glVertex2f(20.5 + x, 5 + y);
+		glVertex2f(19.5 + x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(13.5 + x, 0 + y);
+		glVertex2f(10.5 + x, 5 + y);
+		glVertex2f(12 + x, 7.5 + y);
+		glVertex2f(13.5 + x, 5 + y);
+		glVertex2f(12.5 + x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(6.5 + x, 0 + y);
+		glVertex2f(3.5 + x, 5 + y);
+		glVertex2f(5 + x, 7.5 + y);
+		glVertex2f(6.5 + x, 5 + y);
+		glVertex2f(5.5 + x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(29.5 - x, 0 + y);
+		glVertex2f(32.5 - x, 5 + y);
+		glVertex2f(31 - x, 7.5 + y);
+		glVertex2f(29.5 - x, 5 + y);
+		glVertex2f(30.5 - x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(36.5 - x, 0 + y);
+		glVertex2f(39.5 - x, 5 + y);
+		glVertex2f(38 - x, 7.5 + y);
+		glVertex2f(36.5 - x, 5 + y);
+		glVertex2f(37.5 - x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(43.5 - x, 0 + y);
+		glVertex2f(46.5 - x, 5 + y);
+		glVertex2f(45 - x, 7.5 + y);
+		glVertex2f(43.5 - x, 5 + y);
+		glVertex2f(44.5 - x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+}
+
+void garis_motif2() {
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(54.5 - x, 40 - y);
+		glVertex2f(57.5 - x, 35 - y);
+		glVertex2f(56 - x, 32.5 - y);
+		glVertex2f(54.5 - x, 35 - y);
+		glVertex2f(55.5 - x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(61.5 - x, 40 - y);
+		glVertex2f(64.5 - x, 35 - y);
+		glVertex2f(63 - x, 32.5 - y);
+		glVertex2f(61.5 - x, 35 - y);
+		glVertex2f(62.5 - x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(68.5 - x, 40 - y);
+		glVertex2f(71.5 - x, 35 - y);
+		glVertex2f(70 - x, 32.5 - y);
+		glVertex2f(68.5 - x, 35 - y);
+		glVertex2f(69.5 - x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(45.5 + x, 40 - y);
+		glVertex2f(42.5 + x, 35 - y);
+		glVertex2f(44 + x, 32.5 - y);
+		glVertex2f(45.5 + x, 35 - y);
+		glVertex2f(44.5 + x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(38.5 + x, 40 - y);
+		glVertex2f(35.5 + x, 35 - y);
+		glVertex2f(37 + x, 32.5 - y);
+		glVertex2f(38.5 + x, 35 - y);
+		glVertex2f(37.5 + x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(31.5 + x, 40 - y);
+		glVertex2f(28.5 + x, 35 - y);
+		glVertex2f(30 + x, 32.5 - y);
+		glVertex2f(31.5 + x, 35 - y);
+		glVertex2f(30.5 + x, 37 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(45.5 + x, 40 + y);
+		glVertex2f(42.5 + x, 45 + y);
+		glVertex2f(44 + x, 47.5 + y);
+		glVertex2f(45.5 + x, 45 + y);
+		glVertex2f(44.5 + x, 43 + y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(38.5 + x, 40 + y);
+		glVertex2f(35.5 + x, 45 + y);
+		glVertex2f(37 + x, 47.5 + y);
+		glVertex2f(38.5 + x, 45 + y);
+		glVertex2f(37.5 + x, 43 + y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(31.5 + x, 40 + y);
+		glVertex2f(28.5 + x, 45 + y);
+		glVertex2f(30 + x, 47.5 + y);
+		glVertex2f(31.5 + x, 45 + y);
+		glVertex2f(30.5 + x, 43 + y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(54.5 - x, 40 + y);
+		glVertex2f(57.5 - x, 45 + y);
+		glVertex2f(56 - x, 47.5 + y);
+		glVertex2f(54.5 - x, 45 + y);
+		glVertex2f(55.5 - x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(61.5 - x, 40 + y);
+		glVertex2f(64.5 - x, 45 + y);
+		glVertex2f(63 - x, 47.5 + y);
+		glVertex2f(61.5 - x, 45 + y);
+		glVertex2f(62.5 - x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(68.5 - x, 40 + y);
+		glVertex2f(71.5 - x, 45 + y);
+		glVertex2f(70 - x, 47.5 + y);
+		glVertex2f(68.5 - x, 45 + y);
+		glVertex2f(69.5 - x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+}
+
+void garis_motif3() {
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(70.5 + x, 0 + y);
+		glVertex2f(67.5 + x, 5 + y);
+		glVertex2f(69 + x, 7.5 + y);
+		glVertex2f(70.5 + x, 5 + y);
+		glVertex2f(69.5 + x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(63.5 + x, 0 + y);
+		glVertex2f(60.5 + x, 5 + y);
+		glVertex2f(62 + x, 7.5 + y);
+		glVertex2f(63.5 + x, 5 + y);
+		glVertex2f(62.5 + x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(56.5 + x, 0 + y);
+		glVertex2f(53.5 + x, 5 + y);
+		glVertex2f(55 + x, 7.5 + y);
+		glVertex2f(56.5 + x, 5 + y);
+		glVertex2f(55.5 + x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(79.5 - x, 0 + y);
+		glVertex2f(82.5 - x, 5 + y);
+		glVertex2f(81 - x, 7.5 + y);
+		glVertex2f(79.5 - x, 5 + y);
+		glVertex2f(80.5 - x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(86.5 - x, 0 + y);
+		glVertex2f(89.5 - x, 5 + y);
+		glVertex2f(88 - x, 7.5 + y);
+		glVertex2f(86.5 - x, 5 + y);
+		glVertex2f(87.5 - x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(93.5 - x, 0 + y);
+		glVertex2f(96.5 - x, 5 + y);
+		glVertex2f(95 - x, 7.5 + y);
+		glVertex2f(93.5 - x, 5 + y);
+		glVertex2f(94.5 - x, 3 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+}
+
+void garis_motif4() {
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(95.5 + x, 40 - y);
+		glVertex2f(92.5 + x, 35 - y);
+		glVertex2f(94 + x, 32.5 - y);
+		glVertex2f(95.5 + x, 35 - y);
+		glVertex2f(94.5 + x, 37 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(88.5 + x, 40 - y);
+		glVertex2f(85.5 + x, 35 - y);
+		glVertex2f(87 + x, 32.5 - y);
+		glVertex2f(88.5 + x, 35 - y);
+		glVertex2f(87.5 + x, 37 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(81.5 + x, 40 - y);
+		glVertex2f(78.5 + x, 35 - y);
+		glVertex2f(80 + x, 32.5 - y);
+		glVertex2f(81.5 + x, 35 - y);
+		glVertex2f(80.5 + x, 37 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(95.5 + x, 40 + y);
+		glVertex2f(92.5 + x, 45 + y);
+		glVertex2f(94 + x, 47.5 + y);
+		glVertex2f(95.5 + x, 45 + y);
+		glVertex2f(94.5 + x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(88.5 + x, 40 + y);
+		glVertex2f(85.5 + x, 45 + y);
+		glVertex2f(87 + x, 47.5 + y);
+		glVertex2f(88.5 + x, 45 + y);
+		glVertex2f(87.5 + x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(81.5 + x, 40 + y);
+		glVertex2f(78.5 + x, 45 + y);
+		glVertex2f(80 + x, 47.5 + y);
+		glVertex2f(81.5 + x, 45 + y);
+		glVertex2f(80.5 + x, 43 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+}
+
+void garis_motif6() {
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 1 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(29.5 - x, 80 - y);
+		glVertex2f(32.5 - x, 75 - y);
+		glVertex2f(31 - x, 72.5 - y);
+		glVertex2f(29.5 - x, 75 - y);
+		glVertex2f(30.5 - x, 77 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(36.5 - x, 80 - y);
+		glVertex2f(39.5 - x, 75 - y);
+		glVertex2f(38 - x, 72.5 - y);
+		glVertex2f(36.5 - x, 75 - y);
+		glVertex2f(37.5 - x, 77 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5 ; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(43.5 - x, 80 - y);
+		glVertex2f(46.5 - x, 75 - y);
+		glVertex2f(45 - x, 72.5 - y);
+		glVertex2f(43.5 - x, 75 - y);
+		glVertex2f(44.5 - x, 77 - y);
+		glEnd();
+		
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(20.5 + x, 80 - y);
+		glVertex2f(17.5 + x, 75 - y);
+		glVertex2f(19 + x, 72.5 - y);
+		glVertex2f(20.5 + x, 75 - y);
+		glVertex2f(19.5 + x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(13.5 + x, 80 - y);
+		glVertex2f(10.5 + x, 75 - y);
+		glVertex2f(12 + x, 72.5 - y);
+		glVertex2f(13.5 + x, 75 - y);
+		glVertex2f(12.5 + x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(6.5 + x, 80 - y);
+		glVertex2f(3.5 + x, 75 - y);
+		glVertex2f(5 + x, 72.5 - y);
+		glVertex2f(6.5 + x, 75 - y);
+		glVertex2f(5.5 + x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(20.5 + x, 80 + y);
+		glVertex2f(17.5 + x, 85 + y);
+		glVertex2f(19 + x, 87.5 + y);
+		glVertex2f(20.5 + x, 85 + y);
+		glVertex2f(19.5 + x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(13.5 + x, 80 + y);
+		glVertex2f(10.5 + x, 85 + y);
+		glVertex2f(12 + x, 87.5 + y);
+		glVertex2f(13.5 + x, 85 + y);
+		glVertex2f(12.5 + x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(6.5 + x, 80 + y);
+		glVertex2f(3.5 + x, 85 + y);
+		glVertex2f(5 + x, 87.5 + y);
+		glVertex2f(6.5 + x, 85 + y);
+		glVertex2f(5.5 + x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(29.5 - x, 80 + y);
+		glVertex2f(32.5 - x, 85 + y);
+		glVertex2f(31 - x, 87.5 + y);
+		glVertex2f(29.5 - x, 85 + y);
+		glVertex2f(30.5 - x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(36.5 - x, 80 + y);
+		glVertex2f(39.5 - x, 85 + y);
+		glVertex2f(38 - x, 87.5 + y);
+		glVertex2f(36.5 - x, 85 + y);
+		glVertex2f(37.5 - x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(43.5 - x, 80 + y);
+		glVertex2f(46.5 - x, 85 + y);
+		glVertex2f(45 - x, 87.5 + y);
+		glVertex2f(43.5 - x, 85 + y);
+		glVertex2f(44.5 - x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+}
+
+void garis_motif8() {
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(79.5 - x, 80 - y);
+		glVertex2f(82.5 - x, 75 - y);
+		glVertex2f(81 - x, 72.5 - y);
+		glVertex2f(79.5 - x, 75 - y);
+		glVertex2f(80.5 - x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(86.5 - x, 80 - y);
+		glVertex2f(89.5 - x, 75 - y);
+		glVertex2f(88 - x, 72.5 - y);
+		glVertex2f(86.5 - x, 75 - y);
+		glVertex2f(87.5 - x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(93.5 - x, 80 - y);
+		glVertex2f(96.5 - x, 75 - y);
+		glVertex2f(95 - x, 72.5 - y);
+		glVertex2f(93.5 - x, 75 - y);
+		glVertex2f(94.5 - x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(70.5 + x, 80 - y);
+		glVertex2f(67.5 + x, 75 - y);
+		glVertex2f(69 + x, 72.5 - y);
+		glVertex2f(70.5 + x, 75 - y);
+		glVertex2f(69.5 + x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(63.5 + x, 80 - y);
+		glVertex2f(60.5 + x, 75 - y);
+		glVertex2f(62 + x, 72.5 - y);
+		glVertex2f(63.5 + x, 75 - y);
+		glVertex2f(62.5 + x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(56.5 + x, 80 - y);
+		glVertex2f(53.5 + x, 75 - y);
+		glVertex2f(55 + x, 72.5 - y);
+		glVertex2f(56.5 + x, 75 - y);
+		glVertex2f(55.5 + x, 77 - y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+	
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(70.5 + x, 80 + y);
+		glVertex2f(67.5 + x, 85 + y);
+		glVertex2f(69 + x, 87.5 + y);
+		glVertex2f(70.5 + x, 85 + y);
+		glVertex2f(69.5 + x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(63.5 + x, 80 + y);
+		glVertex2f(60.5 + x, 85 + y);
+		glVertex2f(62 + x, 87.5 + y);
+		glVertex2f(63.5 + x, 85 + y);
+		glVertex2f(62.5 + x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(56.5 + x, 80 + y);
+		glVertex2f(53.5 + x, 85 + y);
+		glVertex2f(55 + x, 87.5 + y);
+		glVertex2f(56.5 + x, 85 + y);
+		glVertex2f(55.5 + x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+	for (int i = 0; i <= 1; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(79.5 - x, 80 + y);
+		glVertex2f(82.5 - x, 85 + y);
+		glVertex2f(81 - x, 87.5 + y);
+		glVertex2f(79.5 - x, 85 + y);
+		glVertex2f(80.5 - x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 3; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(86.5 - x, 80 + y);
+		glVertex2f(89.5 - x, 85 + y);
+		glVertex2f(88 - x, 87.5 + y);
+		glVertex2f(86.5 - x, 85 + y);
+		glVertex2f(87.5 - x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+
+	x = 0;
+	y = 0;
+
+	for (int i = 0; i <= 5; i++) {
+		glBegin(GL_LINE_STRIP);
+		glVertex2f(93.5 - x, 80 + y);
+		glVertex2f(96.5 - x, 85 + y);
+		glVertex2f(95 - x, 87.5 + y);
+		glVertex2f(93.5 - x, 85 + y);
+		glVertex2f(94.5 - x, 83 + y);
+		glEnd();
+
+		x += x_delta;
+		y += y_delta;
+	}
+}
+
+void garis_motif() {
+	glLineWidth(3);
+	garis_motif0();
+	garis_motif1();
+	garis_motif2();
+	garis_motif3();
+	garis_motif4();
+	garis_motif6();
+	garis_motif8();
+}
+
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT);
 
@@ -1154,8 +2124,11 @@ void display() {
 	ketupate();
 	ketupat_kecil();
 	garis();
+	garis_motif();
 	garis_ketupat_kecil();
 
+	x = 0;
+	y = 0;
 	glFlush();
 }
 
